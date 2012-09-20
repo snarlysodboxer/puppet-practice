@@ -29,6 +29,6 @@ file {'/etc/nginx/sites-enabled/default':
 file {'/etc/nginx/sites-enabled/puppet-example':
   ensure  => present,
   path    => '/etc/nginx/sites-enabled/puppet-example',
-  source  => '/data/code/puppet-example',
+  source  => '/tmp/puppet-example',
   notify  => Service['nginx'],
 }

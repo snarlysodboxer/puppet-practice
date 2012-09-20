@@ -8,6 +8,7 @@ then
   apt-get install -y puppet vim-puppet ;
 fi
 
-curl -L 
+curl https://raw.github.com/snarlysodboxer/puppet-practice/master/puppet-example > /tmp/puppet-example
+curl https://raw.github.com/snarlysodboxer/puppet-practice/master/nginx_server.pp > /tmp/nginx_server.pp
 
-puppet apply nginx_server.pp
+puppet apply /tmp/nginx_server.pp
