@@ -2,10 +2,6 @@ package {'nginx':
   ensure  => present,
 }
 
-package {'git':
-  ensure  => present,
-}
-
 file {'/var/www':
   ensure  => directory,
 }

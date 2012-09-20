@@ -2,10 +2,14 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
-if  [ -z "`which puppet`" ] ;
-then
+if  [ -z "`which puppet`" ] ; then
   apt-get update
   apt-get install -y puppet vim-puppet ;
+fi
+
+if  [ -z "`which git`" ] ; then
+  apt-get update
+  apt-get install -y git ;
 fi
 
 curl https://raw.github.com/snarlysodboxer/puppet-practice/master/puppet-example > /tmp/puppet-example
