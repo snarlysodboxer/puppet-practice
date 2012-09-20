@@ -1,4 +1,12 @@
-This repository sets up an nginx webserver with the content listed here: https://github.com/puppetlabs/exercise-webpage
+Puppet Exercise
+===============
+
+This script sets up nginx on an Ubuntu server with the content listed here: 
+https://github.com/puppetlabs/exercise-webpage
+
+
+How to use
+----------
 
 Make sure you have curl installed:
 
